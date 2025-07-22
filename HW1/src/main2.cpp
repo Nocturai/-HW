@@ -1,29 +1,28 @@
-
 #include <iostream>
 #include <cstring>
 using namespace std;
 
 const int MAX = 3;
 
-void powerset(char set[], char subset[], int index, int subset_len) {
-    if (index == MAX) {
+void powerset(char set[], char bset[], int i, int len) {
+    if (i == MAX) {
         cout << "{ ";
-        for (int i = 0; i < subset_len; ++i)
-            cout << subset[i] << " ";
+        for (int i = 0; i < len; ++i)
+            cout << bset[i] << " ";
         cout << "}" << endl;
         return;
     }
 
-    powerset(set, subset, index + 1, subset_len);
+    powerset(set, bset, i + 1, len);
 
-    subset[subset_len] = set[index];
-    powerset(set, subset, index + 1, subset_len + 1);
+    bset[len] = set[i];
+    powerset(set, bset, i + 1, len + 1);
 }
 
 int main() {
     char set[MAX] = {'A', 'B', 'C'};
-    char subset[MAX];
+    char bset[MAX];
     cout << "Powerset of {A, B, C}:" << endl;
-    powerset(set, subset, 0, 0);
+    powerset(set, bset, 0, 0);
     return 0;
 }
