@@ -21,4 +21,4 @@ jobs:
     - name: Run clang-format check
       run: |
         echo "Checking formatting..."
-        find src -name '*.cpp' -o -name '*.h' | xargs clang-format -n --Werror
+        find HW1/src -name '*.cpp' -o -name '*.h' | xargs clang-format -n --Werror
