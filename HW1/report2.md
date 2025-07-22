@@ -75,9 +75,8 @@ int main() {
 ### 編譯與執行指令
 
 ```shell
-$ g++ -std=c++17 -o sigma sigma.cpp
-$ ./sigma
-6
+$ g++ -std=c++17 -Wall -O2 -o powerset powerset.cpp
+$ ./powerset
 ```
 
 ### 結論
