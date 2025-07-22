@@ -19,19 +19,24 @@
 
 ```cpp
 #include <iostream>
+
 using namespace std;
 
-int sigma(int n) {
-    if (n < 0)
-        throw "n < 0";
-    else if (n <= 1)
-        return n;
-    return n + sigma(n - 1);
+int a(int m, int n) {
+    if (m == 0) return n + 1;
+    if (n == 0) return a(m - 1, 1);
+    return a(m - 1, a(m, n - 1));
 }
 
 int main() {
-    int result = sigma(3);
-    cout << result << '\n';
+    int m,n;
+    
+    cout << "input m n" << endl;
+    cin >> m >> n;
+    cout << m << "," << n << "," << a(m,n) << endl;
+
+    system("pause");
+    return 0;
 }
 ```
 
