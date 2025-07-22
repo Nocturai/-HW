@@ -81,10 +81,10 @@ $ ./ackermann
 選擇遞迴的理由
 - 符合數學定義：Ackermann 函數本身就是遞迴定義，使用遞迴能直接對應公式。
 - 程式簡潔：遞迴能清楚表達三種條件分支，避免複雜的迴圈與堆疊模擬。
-- ```cpp
+```cpp
    int a(int m, int n) {
     if (m == 0) return n + 1;
     if (n == 0) return a(m - 1, 1);
     return a(m - 1, a(m, n - 1));
 }
-  ```
+```
