@@ -15,7 +15,6 @@ int main() {
     cin >> m >> n;
     cout << m << "," << n << "," << a(m,n) << endl;
 
-    system("pause");
     return 0;
 }
 
