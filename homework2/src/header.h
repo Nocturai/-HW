@@ -1,1 +1,10 @@
-
+#include <algorithm>
+#include <cmath>
+#include <cstdio>
+#include <cstdlib>
+#include <cstring>
+#include <fstream>
+#include <iostream>
+#include <random>
+#include <sstream>
+#include <string>
