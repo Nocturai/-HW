@@ -81,3 +81,9 @@ int main() {
     cout << "多項式：\n" << p << endl;
     return 0;
 }
+```
+### 編譯與執行指令
+```
+sh
+$ g++ -std=c++17 -o polynomial polynomial.cpp
+$ ./polynomial
